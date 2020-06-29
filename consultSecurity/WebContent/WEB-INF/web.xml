@@ -9,4 +9,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>loginServlet</display-name>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>consultSecurity.loginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>IngresoLogin</display-name>
+    <servlet-name>IngresoLogin</servlet-name>
+    <servlet-class>controlador.IngresoLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IngresoLogin</servlet-name>
+    <url-pattern>/IngresoLogin</url-pattern>
+  </servlet-mapping>
 </web-app>
