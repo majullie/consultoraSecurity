@@ -18,18 +18,26 @@
 		<th>Nombre</th>
 		<th>Apellido</th>
 		<th>Area Accidente</th>
+		<th>Solicitud</th>
 	</tr>
 	
-<c:forEach items="${listadoRegistroAccidente}" var="registro">
+<c:forEach items="${listadoRegistroAccidente}" var="rgst">
 <tr>
-		<td>${registro.getIdAccidentes()}</td>
-		<td>${registro.getNombre()}</td>
-		<td>${registro.getIdApellido()}</td>
-		<td>${registro.getAreaAccidente()}</td>
+		<td>${rgst.getIdAccidentes()}</td>
+		<td>${rgst.getNombre()}</td>
+		<td>${rgst.getIdApellido()}</td>
+		<td>${rgst.getAreaAccidente()}</td>
+		<td>
+			<a href="${pageContext.request.contextPath}/EliminarRegistroAccidente?id=${user.getId()}">Eliminar</a>
+			&nbsp;
+			<a href="${pageContext.request.contextPath}/EditarRegistroAccidente?id=${user.getId()}">Editar</a>
+		</td>
 	</tr>
 	
 </c:forEach>
 </table>
 <a href="${pageContext.request.contextPath}/CrearRegistroAccidente">Crear Registro</a>
+<br>
+<c:out value="${cumensaje}"/>
 </body>
 </html>

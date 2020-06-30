@@ -49,4 +49,24 @@
     <servlet-name>CrearRegistroAcc</servlet-name>
     <url-pattern>/CrearRegistroAcc</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EliminarRegistroAccidente</display-name>
+    <servlet-name>EliminarRegistroAccidente</servlet-name>
+    <servlet-class>controlador.EliminarRegistroAccidente</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarRegistroAccidente</servlet-name>
+    <url-pattern>/EliminarRegistroAccidente</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditarRegistroAccidente</display-name>
+    <servlet-name>EditarRegistroAccidente</servlet-name>
+    <servlet-class>controlador.EditarRegistroAccidente</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditarRegistroAccidente</servlet-name>
+    <url-pattern>/EditarRegistroAccidente</url-pattern>
+  </servlet-mapping>
 </web-app>

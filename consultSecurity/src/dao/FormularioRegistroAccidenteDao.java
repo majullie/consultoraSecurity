@@ -9,6 +9,7 @@ import java.util.List;
 
 
 
+
 import conectar.ConexionSingleton;
 import modelo.FormularioRegistroAccidentes;
 import idao.IFormularioAccidentesDao;
@@ -87,7 +88,26 @@ public class FormularioRegistroAccidenteDao implements IFormularioAccidentesDao 
 	public boolean eliminarRegistroAccidente(
 			FormularioRegistroAccidentes registro) {
 		// TODO Auto-generated method stub
-		return false;
+		Connection con = null;
+		Statement stm = null;
+		
+		boolean eliminar = false;
+		
+		String sql = "DELETE FROM formaccidentes WHERE id = " + registro.getIdAccidentes();
+		
+		try {
+			con = ConexionSingleton.getConnection();
+			stm = con.createStatement();
+			stm.execute(sql);
+			eliminar = true;
+			stm.close();
+			//con.close();
+		}catch(SQLException e) {
+			System.out.println("Error: Clase FormularioRegistroAccidentes, método eliminarRegistro");
+			e.printStackTrace();
+		}
+		
+		return eliminar;
 	}
 
 }
