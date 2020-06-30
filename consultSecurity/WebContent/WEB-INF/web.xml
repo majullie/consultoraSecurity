@@ -29,4 +29,24 @@
     <servlet-name>IngresoLogin</servlet-name>
     <url-pattern>/IngresoLogin</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListarRegistrosAccidentes</display-name>
+    <servlet-name>ListarRegistrosAccidentes</servlet-name>
+    <servlet-class>controlador.ListarRegistrosAccidentes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListarRegistrosAccidentes</servlet-name>
+    <url-pattern>/ListarRegistrosAccidentes</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CrearRegistroAcc</display-name>
+    <servlet-name>CrearRegistroAcc</servlet-name>
+    <servlet-class>controlador.CrearRegistroAcc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CrearRegistroAcc</servlet-name>
+    <url-pattern>/CrearRegistroAcc</url-pattern>
+  </servlet-mapping>
 </web-app>
