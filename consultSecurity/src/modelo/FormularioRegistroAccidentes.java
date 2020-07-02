@@ -25,6 +25,17 @@ public class FormularioRegistroAccidentes {
 
 
 
+	public FormularioRegistroAccidentes(int idAccidentes, String nombre,
+			String apellido, String areaAccidente) {
+		super();
+		this.idAccidentes = idAccidentes;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.areaAccidente = areaAccidente;
+	}
+
+
+
 	public int getIdAccidentes() {
 		return idAccidentes;
 	}

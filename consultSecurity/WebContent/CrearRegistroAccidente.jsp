@@ -18,7 +18,7 @@ Apellido: <input type="text" name="txtapellido"/><br/>
 Area Accidente: <input type="text" name="txtarea"/><br/>
 <input type="submit" value="Agregar registro"/>
 </form>
-<a href="${pageContext.request.contextPath}/FormRegAccidente">Volver al historial</a>
+<a href="${pageContext.request.contextPath}/ListarRegistrosAccidentes">Volver al historial</a>
 <br>
 <c:out value="${cumensaje}"/>
 </body>

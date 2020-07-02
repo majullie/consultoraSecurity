@@ -11,4 +11,5 @@ public interface IFormularioAccidentesDao {
 	public List<FormularioRegistroAccidentes> leerRegistrosAccidentes();
 	public boolean actualizarRegistroAccidente(FormularioRegistroAccidentes registro);
 	public boolean eliminarRegistroAccidente(FormularioRegistroAccidentes registro);
+	public FormularioRegistroAccidentes obtenerRegistroAccidente(int idAccidente);
 }
